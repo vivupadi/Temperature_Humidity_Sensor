@@ -1,7 +1,7 @@
 # Temperature & Humidity (IoT) System
 
 A continuous temperature and humidity sensor to monitor and observe the changes using Grafana Dashboard. 
-Alerts can be added
+Alerts can be added using Grafana alerting system + Telegram
 
 ## Tech Stack
 
@@ -14,7 +14,10 @@ Alerts can be added
 
 #### Software
 
-1. HiveMQ
-2. InfluxDB
-3. Telegraf
-4. Grafana
+1. MQTT framework
+2. HiveMQ
+4. InfluxDB
+5. Telegraf
+6. Grafana
+
+Published-subscriber approach to update the time-series data. It uses HiveMQ to subscribe to the data, which is then transferred to InfluxDB using Telegraf.
