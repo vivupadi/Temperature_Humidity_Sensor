@@ -21,3 +21,7 @@ Alerts can be added using Grafana alerting system + Telegram
 6. Grafana
 
 Published-subscriber approach to update the time-series data. It uses HiveMQ to subscribe to the data, which is then transferred to InfluxDB using Telegraf.
+
+## Future Scope
+
+- DAshboard setup for continuous observability
